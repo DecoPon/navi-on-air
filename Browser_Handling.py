@@ -5,17 +5,40 @@ from time import sleep
 
 
 class BrowserHandling:
+    '''
+    def __init__(self, url, driver_path):
+        self._url = url
+        self._driver_path = driver_path
+
+    # open url path
+    @property
+    def url(self):
+        return self._url
+
+    @url.setter
+    def url(self, url):
+        self._url = url
+
+    @property
+    def driver_path(self):
+        return self._driver_path
+
+    @driver_path.setter
+    def driver_path(self, driver_path):
+        self._driver_path = driver_path
+    '''
 
     @classmethod
-    def browser_control(self):
+    def control_browser(self, url, driver_path):
         # Maximize Browser option
         options = webdriver.ChromeOptions()
         options.add_argument("--kiosk")
 
-        # driver = webdriver.Chrome(executable_path="driver/chromedriver")
-        driver = webdriver.Chrome(chrome_options=options)
+        driver = webdriver.Chrome(executable_path = driver_path,
+                                  chrome_options = options)
+        #driver = webdriver.Chrome(chrome_options=options)
 
-        driver.get("https://www.google.co.jp/")
+        driver.get(url)
 
         driver.find_element_by_id("lst-ib").send_keys("selenium")
         driver.find_element_by_id("lst-ib").send_keys(Keys.ENTER)

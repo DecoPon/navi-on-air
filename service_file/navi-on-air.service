@@ -1,0 +1,10 @@
+[Unit]
+Description = Cinage application for RaspberryPi
+
+[Service]
+ExecStart=python3 /home/pi/projects/python/navi-on-air/main.py
+Restart=always
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

@@ -120,6 +120,7 @@
                 "sha256:fcc6d46f08c3c4de7b15ae1c426e15be1b7932bcda9d83ce1a4304e8c1129df3",
                 "sha256:51c158a6c8b899898d1c91c6b51a34110196815cc905f9be0fa5878e19355608"
             ],
+            "markers": "python_version >= '3.3'",
             "version": "==6.2.1"
         },
         "ipython-genutils": {
@@ -215,10 +216,10 @@
         },
         "notebook": {
             "hashes": [
-                "sha256:dbce87812b7f2025e0f83eaab1701a71d874a7aba0766cd8c03ba9be77760643",
-                "sha256:380bbed63117accbb13e42d01d06153c72da6a386f75c81ae4c174eaa11e738b"
+                "sha256:9063a0daaac7816e1b7fc7dfcf69ee173904dcf3b460b45f5b6df06818969bd6",
+                "sha256:dd431fad9bdd25aa9ff8265da096ef770475e21bf1d327982611a7de5cd904ca"
             ],
-            "version": "==5.3.1"
+            "version": "==5.4.0"
         },
         "pandocfilters": {
             "hashes": [
